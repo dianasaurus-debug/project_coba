@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
-import 'package:kos_dea/models/tempat_wisata.dart';
+import 'package:healthycafe/models/tempat_wisata.dart';
 
 import '../models/category.dart';
 
@@ -82,5 +82,5 @@ const kPrimaryGradientColor = LinearGradient(
 );
 const kSecondaryColor = Color(0xFFacc0c0);
 const kTextColor = Color(0xFFd0e2e3);
-const API_URL = 'http://0ba3-114-125-94-134.ngrok.io/api';
-const IMG_URL = 'http://0ba3-114-125-94-134.ngrok.io/images/';
+const API_URL = 'https://michelin-restaurant-list.herokuapp.com/api';
+const IMG_URL = 'https://michelin-restaurant-list.herokuapp.com/images/';

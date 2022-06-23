@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/utils/constants.dart';
 
 class chipWidget extends StatelessWidget {
   const chipWidget(this.label, this.color);

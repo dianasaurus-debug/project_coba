@@ -3,12 +3,12 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kos_dea/controllers/product_controller.dart';
-import 'package:kos_dea/models/restaurant.dart';
+import 'package:healthycafe/controllers/product_controller.dart';
+import 'package:healthycafe/models/restaurant.dart';
 
-import 'package:kos_dea/utils/constants.dart';
-import 'package:kos_dea/widgets/app_bar.dart';
-import 'package:kos_dea/widgets/restaurant_tile.dart';
+import 'package:healthycafe/utils/constants.dart';
+import 'package:healthycafe/widgets/app_bar.dart';
+import 'package:healthycafe/widgets/restaurant_tile.dart';
 import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {

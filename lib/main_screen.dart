@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:kos_dea/detail.dart';
-import 'package:kos_dea/models/tempat_wisata.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/detail.dart';
+import 'package:healthycafe/models/tempat_wisata.dart';
+import 'package:healthycafe/utils/constants.dart';
 
 class MainScreen extends StatelessWidget {
   @override

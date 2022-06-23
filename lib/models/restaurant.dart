@@ -1,5 +1,5 @@
 
-import 'package:kos_dea/models/products.dart';
+import 'package:healthycafe/models/products.dart';
 
 class Restaurant {
   late String nama;

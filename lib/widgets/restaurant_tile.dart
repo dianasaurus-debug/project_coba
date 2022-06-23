@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kos_dea/detail.dart';
-import 'package:kos_dea/detail_screen.dart';
-import 'package:kos_dea/models/products.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/detail.dart';
+import 'package:healthycafe/detail_screen.dart';
+import 'package:healthycafe/models/products.dart';
+import 'package:healthycafe/models/restaurant.dart';
+import 'package:healthycafe/utils/constants.dart';
 import 'package:intl/intl.dart';
 
 class RestaurantTile extends StatelessWidget {
@@ -15,15 +15,7 @@ class RestaurantTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => {
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //       builder: (context) => DetailJasa(isAuth: isAuth, idVendor : snapshot.data![index].id)),
-        // )
-      },
-      child: Card(
+    return Card(
         clipBehavior: Clip.antiAlias,
         child: Column(
           crossAxisAlignment:
@@ -112,7 +104,6 @@ class RestaurantTile extends StatelessWidget {
                     ])),
           ],
         ),
-      ),
-    );
+      );
   }
 }

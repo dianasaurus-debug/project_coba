@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kos_dea/models/products.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/models/products.dart';
+import 'package:healthycafe/utils/constants.dart';
 import 'package:intl/intl.dart';
 
 class GridProduct extends StatelessWidget {
@@ -21,11 +21,15 @@ class GridProduct extends StatelessWidget {
       width: size.width/3,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
+
           color: Colors.white),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.network(IMG_URL+'produk/'+ product.foto_produk),
+          Hero(
+            tag: product.id,
+            child: Image.network(IMG_URL+'produk/'+ product.foto_produk),
+          ),
           Padding(
             padding: EdgeInsets.all(MediaQuery.of(context).size.height*(0.01)),
             child: Column(

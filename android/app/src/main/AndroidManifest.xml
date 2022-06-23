@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kos_dea">
+    package="com.example.healthycafe">
    <application
         android:label="Healthy Cafe"
         android:icon="@mipmap/ic_launcher">

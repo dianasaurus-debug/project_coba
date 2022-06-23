@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:kos_dea/detail.dart';
+import 'package:healthycafe/detail.dart';
 
 class Home extends StatelessWidget {
   @override

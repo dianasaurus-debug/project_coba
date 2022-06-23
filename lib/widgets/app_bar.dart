@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/utils/constants.dart';
 
 
 class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {

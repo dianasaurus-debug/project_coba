@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:kos_dea/beranda.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/beranda.dart';
+import 'package:healthycafe/utils/constants.dart';
 
 class SplashScreenPage extends StatefulWidget {
   @override

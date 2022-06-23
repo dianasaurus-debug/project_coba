@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kos_dea/beranda.dart';
-import 'package:kos_dea/main_screen.dart';
-import 'package:kos_dea/splash_screen.dart';
+import 'package:healthycafe/beranda.dart';
+import 'package:healthycafe/main_screen.dart';
+import 'package:healthycafe/splash_screen.dart';
 
 import 'home.dart';
 

@@ -1,11 +1,8 @@
 
 import 'dart:convert';
-import 'package:kos_dea/models/products.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/utils/constants.dart';
+import 'package:healthycafe/models/products.dart';
+import 'package:healthycafe/models/restaurant.dart';
+import 'package:healthycafe/utils/constants.dart';
 import 'package:http/http.dart' as http;
 
 class ProductNetwork {

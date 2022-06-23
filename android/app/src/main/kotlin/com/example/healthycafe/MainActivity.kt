@@ -1,4 +1,4 @@
-package com.example.kos_dea
+package com.example.healthycafe
 
 import io.flutter.embedding.android.FlutterActivity
 

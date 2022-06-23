@@ -5,10 +5,11 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:healthycafe/product_detail.dart';
 import 'package:intl/intl.dart';
-import 'package:kos_dea/models/restaurant.dart';
-import 'package:kos_dea/utils/constants.dart';
-import 'package:kos_dea/widgets/grid_product.dart';
+import 'package:healthycafe/models/restaurant.dart';
+import 'package:healthycafe/utils/constants.dart';
+import 'package:healthycafe/widgets/grid_product.dart';
 
 class DetailPage extends StatefulWidget {
   final Restaurant? restaurant;
@@ -135,10 +136,22 @@ class DetailPageState extends State<DetailPage> {
                       fontWeight: FontWeight.bold)),
               ),
               Container(
-                  height: size.height/3,
+                  height: size.height/3.5,
                   child:  ListView(
                       scrollDirection: Axis.horizontal,
-                      children: widget.restaurant!.products!.map((product) => GridProduct(product)).toList()
+                      children: widget.restaurant!.products!.map((product) =>
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(
+                              context,
+                              new MaterialPageRoute(
+                                  builder: (context) => ProductDetail(product:product )
+                              ),
+                            );
+                          },
+                          child : GridProduct(product)
+                        )
+                      ).toList()
                   )
               ),
 
@@ -147,24 +160,7 @@ class DetailPageState extends State<DetailPage> {
     );
   }
 
-  _showModalBottomSheet(food) {
-    showModalBottomSheet(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)),
-        ),
-        context: context,
-        builder: (context) {
-          return Padding(
-              padding : EdgeInsets.all(20),
-              child : Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Image.network(IMG_URL+'produk/'+ food.foto_produk, width: 200),
-                ],
-              )
-          );
-        });
-  }
+
 
 
 }
